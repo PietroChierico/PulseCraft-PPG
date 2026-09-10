@@ -1,0 +1,10 @@
+flask
+joblib
+matplotlib
+numpy
+pandas
+pyqtgraph
+PyQt6
+pyserial
+scikit-learn
+scipy

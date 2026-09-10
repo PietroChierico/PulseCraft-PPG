@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discussions
+    url: https://github.com/PietroChierico/PulseCraft-PPG/discussions
+    about: General questions, teaching experiences, and show-and-tell.

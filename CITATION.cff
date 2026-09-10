@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+title: "PulseCraft PPG: an open photoplethysmography teaching kit"
+message: "If you use PulseCraft PPG for teaching, research, workshops, or a derivative kit, please cite it as below."
+type: software
+authors:
+  - family-names: Chierico
+    given-names: Pietro
+    email: pietrochr@gmail.com
+    affiliation: "Universitat Politecnica de Valencia; visiting PhD, Khalifa University"
+year: 2026
+version: "1.0.0"
+license: MIT
+repository-code: "https://github.com/PietroChierico/PulseCraft-PPG"
+url: "https://PietroChierico.github.io/PulseCraft-PPG/"
+abstract: >-
+  A project-based educational kit for photoplethysmography (PPG). It contains Arduino and
+  ESP32 acquisition firmware, a 3D-printable MAX3010x sensor enclosure, Python pipelines for
+  guided data collection, filtering and feature extraction, small interpretable machine-learning
+  models, real-time GUI demonstrations, and a synthetic-signal simulator that lets every wireless
+  project run without hardware. Five projects cover physical-activity recognition, caffeine
+  response, relaxation biofeedback, a voluntary-apnea SpO2 proxy, and live mental-stress
+  detection. Built for the Khalifa University CMHS Summer Internship Program 2026.
+keywords:
+  - photoplethysmography
+  - PPG
+  - biomedical signal processing
+  - wearable sensing
+  - digital health
+  - heart rate variability
+  - pulse oximetry
+  - Arduino
+  - ESP32
+  - MAX30102
+  - MAX30105
+  - machine learning
+  - biomedical engineering education
+  - STEM teaching kit
+  - open educational resource

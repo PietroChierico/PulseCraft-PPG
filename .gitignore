@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Operating system / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Physiological data and generated outputs
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.joblib
+*.pkl
+*.pickle
+*.npy
+*.npz
+data/
+datasets/
+outputs/
+results/
+models/
+trained_models/
+exports/
+
+# Logs
+*.log
