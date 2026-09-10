@@ -2,24 +2,21 @@
 
 These sketches turn the ESP32 into a WiFi TCP PPG streamer.
 
-## Common wiring for Adafruit Feather ESP32-C6
+## Wiring for the Adafruit Feather ESP32-C6
 
 | MAX3010x | ESP32-C6 Feather |
-|---|---|
+|----------|------------------|
 | GND | GND |
 | VIN | 3.3V |
 | SDA | SDA / IO19 |
 | SCL | SCL / IO18 |
-| INT | Not connected |
+| INT | not connected |
 
 ## Connection modes
 
-By default, the sketch first tries router WiFi credentials. If those are left as placeholders, it starts an Access Point. Connect your computer to that AP and use:
-
-```text
-Host: 192.168.4.1
-Port: 3333
-```
+By default the sketch first tries the router WiFi credentials. If those are left as
+placeholders it starts an Access Point instead. Connect your computer to that Access Point and
+use host `192.168.4.1` and port `3333`.
 
 ## Sketches
 
@@ -29,4 +26,6 @@ Port: 3333
 - `project-04-wifi-red-ir-streamer/esp32_wireless_red_ir.ino`
 - `project-05-wifi-ir-streamer/esp32_wireless.ino`
 
-The shipped sketches stream positive raw sensor counts. Project 04 is the only one that requires a paired Red + IR stream for the Python workflow; the other wireless sketches also transmit Red and IR, but the project code uses IR.
+The sketches stream positive raw sensor counts. Project 04 is the only one that needs a paired
+Red and IR stream for its Python workflow. The other wireless sketches also send Red and IR, but
+the project code uses IR only.

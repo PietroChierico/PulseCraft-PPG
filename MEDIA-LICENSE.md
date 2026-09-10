@@ -1,19 +1,13 @@
 # Media license
 
-Code in this repository is licensed under the MIT License in `LICENSE`.
+Code in this repository is under the MIT License in `LICENSE`.
 
-The following non-code assets are licensed under the Creative Commons Attribution 4.0 International License, CC BY 4.0:
+The non-code assets are under the Creative Commons Attribution 4.0 International License
+(CC BY 4.0). This covers the STL and 3D-printable files, setup photos, wiring diagrams, project
+images, and any other visual or media assets added under `docs/assets/images/`.
 
-- STL / 3D-printable files
-- setup photos
-- wiring diagrams
-- project images
-- other visual or media assets added to `docs/assets/images/`
-
-Attribution:
+Use this attribution line when you reuse or adapt them.
 
 ```text
 PulseCraft PPG media assets by Pietro Chierico, licensed under CC BY 4.0.
 ```
-
-Please keep attribution to Pietro Chierico when reusing or adapting these assets.

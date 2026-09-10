@@ -10,7 +10,7 @@ Contributions are welcome when they keep the kit **educational, reproducible, an
 - Additional interpretable features or visualisations.
 - Translations of the docs.
 - Bug fixes in parsers, protocols, or GUIs.
-- New projects that follow the collect → analyze → run-live pattern.
+- New projects that follow the same collect, analyze, run-live pattern.
 
 ## Please do not submit
 

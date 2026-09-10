@@ -1,33 +1,36 @@
 # PulseCraft PPG
 
-**An open photoplethysmography (PPG) teaching kit — sensor to live AI demo in one lab week.**
+An open set of photoplethysmography (PPG) projects that go from a raw optical sensor to a live,
+AI-assisted physiological demo.
 
-Arduino + ESP32 acquisition firmware, a 3D-printable MAX3010x case, Python collect/analyze/train
-pipelines, small ML models, live GUI demos, and a signal simulator so you can run everything
-before hardware arrives.
+Arduino and ESP32 acquisition firmware, a 3D-printable MAX3010x case, Python code for recording
+data and extracting features, small machine-learning models, live GUI demos, and a signal
+simulator so you can run everything before any hardware arrives.
 
-- **Code:** <https://github.com/PietroChierico/PulseCraft-PPG>
-- **Start here:** [Getting started](getting-started.md) · [Hardware](hardware.md) ·
-  [Signal processing](signal-processing.md) · [Signal-quality checklist](signal-quality-checklist.md) ·
-  [Troubleshooting](troubleshooting.md) · [FAQ](faq.md) · [Glossary](glossary.md)
+Code is at <https://github.com/PietroChierico/PulseCraft-PPG>.
+
+Start with [Getting started](getting-started.md). See also [Hardware](hardware.md),
+[Signal processing](signal-processing.md),
+[Signal-quality checklist](signal-quality-checklist.md),
+[Troubleshooting](troubleshooting.md), [FAQ](faq.md) and [Glossary](glossary.md).
 
 ## Projects
 
 | # | Project | Signal | Hardware |
 |---|---------|--------|----------|
 | 01 | Physical activity recognition (resting vs walking) | IR | Wireless |
-| 02 | Caffeine response time-course | IR | Wired / wireless |
-| 03 | Relaxation score game (breathing) | IR | Wired / wireless |
-| 04 | Voluntary-apnea biofeedback + SpO2 proxy | Red + IR | Wired / wireless |
-| 05 | Mental stress detection (live classifier) | IR | Wired / wireless |
+| 02 | Caffeine response over time | IR | Wired or wireless |
+| 03 | Relaxation score game (breathing) | IR | Wired or wireless |
+| 04 | Voluntary-apnea biofeedback with a SpO2 proxy | Red + IR | Wired or wireless |
+| 05 | Mental stress detection (live classifier) | IR | Wired or wireless |
 
-[Project protocols](project-protocols.md)
+See [Project protocols](project-protocols.md) for the recording steps.
 
 ## Attribution
 
-Designed and built by **Pietro Chierico** during a visiting PhD at **Khalifa University**
-(visiting supervisor **Prof. Mohamed Elgendi**; home PhD supervisor **Prof. José Javier Rieta**,
-Universitat Politècnica de València). Built for the **CMHS Summer Internship Program 2026**,
-Biomedical Engineering & Biotechnology track.
+Designed and built by **Pietro Chierico** during a visiting PhD period at **Khalifa University**.
+Visiting supervisor at Khalifa University, **Prof. Mohamed Elgendi**. Home PhD supervisor at
+Universitat Politècnica de València, **Prof. José Javier Rieta**. Built for the **CMHS Summer
+Internship Program 2026**, in the Biomedical Engineering and Biotechnology track.
 
-Education and research only. Not a medical device.
+For education and research only. Not a medical device.

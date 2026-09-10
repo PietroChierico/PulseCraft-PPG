@@ -1,8 +1,8 @@
 # Image slots
 
-Add your public setup photos here after reviewing them for privacy.
+Add your public setup photos here after checking them for privacy.
 
-Suggested names:
+Some names that fit the docs.
 
 - `hardware/wired-arduino-overview.jpg`
 - `hardware/wireless-esp32-overview.jpg`
@@ -10,4 +10,5 @@ Suggested names:
 - `stl/max30102-case-assembled.jpg`
 - `project-04/red-ir-sensor-contact.jpg`
 
-Avoid photos with student faces, private notes, ID cards, or visible personal data unless you have explicit permission.
+Avoid photos with faces, private notes, ID cards, or visible personal data unless you have
+explicit permission.

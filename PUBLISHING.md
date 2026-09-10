@@ -1,61 +1,57 @@
-# Publishing this repository
+# Publishing and discoverability
 
-A checklist for the first push and for making it discoverable (SEO).
+Notes for publishing this repository, or a fork of it, and for making it easy to find.
 
-## 1. Placeholders
+## Before the first push
 
-Already set to `PietroChierico` in `README.md`, `CITATION.cff`, `docs/index.md`, and
-`.github/ISSUE_TEMPLATE/config.yml`. Nothing to do here unless you rename the GitHub account.
+Check that nothing private is included.
 
-## 2. Check nothing private is included
+- No CSVs, models, or `data/` and `results/` folders. `.gitignore` should already prevent this.
+- Setup photos under `docs/assets/images/` have no faces, ID badges, screens showing participant
+  data, or handwritten notes.
+- No names beyond the author and the two named supervisors.
 
-- [ ] No CSVs, models, or `data/` / `results/` folders (`.gitignore` should already prevent this).
-- [ ] Setup photos in `docs/assets/images/` have no faces, ID badges, screens with participant
-      data, or handwritten notes.
-- [ ] No names beyond the author and the two named supervisors.
-
-## 3. Create the repo and push
+## Create the repo and push
 
 ```bash
 git init
 git add .
-git commit -m "PulseCraft PPG 1.0.0 — open photoplethysmography teaching kit"
+git commit -m "PulseCraft PPG 1.0.0"
 git branch -M main
 git remote add origin https://github.com/your-handle/PulseCraft-PPG.git
 git push -u origin main
 git tag v1.0.0 && git push --tags
 ```
 
-## 4. Make it discoverable (the SEO part)
+## Repo settings that make it findable
 
-**Repo → About (gear icon):**
+Open the repo's About panel (the gear icon on the main page) and set the following.
 
-- **Description:**
-  `Open photoplethysmography (PPG) teaching kit: Arduino + ESP32 acquisition, MAX30102 case, Python feature extraction, small ML models, live demos, and a no-hardware simulator. 5 ready-to-teach projects.`
-- **Website:** `https://your-handle.github.io/PulseCraft-PPG/`
-- **Topics (add all):**
-  `photoplethysmography` `ppg` `biomedical-signal-processing` `wearable-sensing` `digital-health`
-  `heart-rate-variability` `pulse-oximetry` `arduino` `esp32` `max30102` `max30105`
-  `machine-learning` `biomedical-engineering` `stem-education` `teaching-materials`
-  `open-educational-resources` `signal-processing` `python`
+Description.
 
-**Repo settings:**
+```
+Open photoplethysmography (PPG) projects. Arduino and ESP32 acquisition, a MAX30102 sensor case, Python feature extraction, small ML models, live demos, and a no-hardware simulator. Five small projects.
+```
 
-- Enable **Issues** and **Discussions**.
-- **Pages:** Settings → Pages → Source = `Deploy from a branch`, branch `main`, folder `/docs`.
-- Add a social preview image (Settings → Social preview) — a photo of the setup or a diagram.
+Website, `https://your-handle.github.io/PulseCraft-PPG/`.
 
-**In the first GitHub Release (`v1.0.0`):** paste the `CHANGELOG.md` 1.0.0 section.
+Topics, added one at a time.
 
-## 5. Get a citable DOI (optional, recommended)
+```
+photoplethysmography  ppg  biomedical-signal-processing  wearable-sensing  digital-health
+heart-rate-variability  pulse-oximetry  arduino  esp32  max30102  max30105  machine-learning
+biomedical-engineering  stem-education  teaching-materials  open-educational-resources
+signal-processing  python
+```
 
-1. Sign in to [Zenodo](https://zenodo.org) with GitHub.
-2. Flip the switch for `PulseCraft-PPG` in Zenodo → GitHub settings.
-3. Publish a new GitHub Release — Zenodo mints a DOI automatically.
-4. Add the DOI badge to `README.md` and the `doi:` field to `CITATION.cff`.
+In the repo settings, enable Issues and Discussions. Under Pages, set the source to a branch,
+pick `main` and the `/docs` folder. Add a social preview image under Social preview, a photo of
+the setup or a diagram works well.
 
-## 6. Announce
+For the first GitHub Release, tag `v1.0.0` and paste the 1.0.0 section of `CHANGELOG.md`.
 
-- A short post with the Pages link and one screenshot.
-- Consider: awesome-lists for biomedical engineering / physiological computing, your lab site,
-  relevant subreddits and forums, and the Hackaday.io / Arduino Project Hub communities.
+## Optional, a citable DOI
+
+Sign in to Zenodo with GitHub, turn on the switch for this repository in the Zenodo GitHub
+settings, then publish a GitHub Release. Zenodo mints a DOI for it. Add the DOI badge to
+`README.md` and a `doi:` field to `CITATION.cff`.

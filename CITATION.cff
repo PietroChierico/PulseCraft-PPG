@@ -1,12 +1,12 @@
 cff-version: 1.2.0
-title: "PulseCraft PPG: an open photoplethysmography teaching kit"
+title: "PulseCraft PPG, an open photoplethysmography kit"
 message: "If you use PulseCraft PPG for teaching, research, workshops, or a derivative kit, please cite it as below."
 type: software
 authors:
   - family-names: Chierico
     given-names: Pietro
     email: pietrochr@gmail.com
-    affiliation: "Universitat Politecnica de Valencia; visiting PhD, Khalifa University"
+    affiliation: "Universitat Politecnica de Valencia (visiting PhD at Khalifa University)"
 year: 2026
 version: "1.0.0"
 license: MIT

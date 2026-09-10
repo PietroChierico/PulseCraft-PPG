@@ -2,7 +2,7 @@
 
 ## Our pledge
 
-We want participation in this project — as a user, student, instructor, or contributor — to be a
+We want participation in this project, as a user or a contributor, to be a
 harassment-free experience for everyone, regardless of age, body size, visible or invisible
 disability, ethnicity, sex characteristics, gender identity and expression, level of experience,
 education, socio-economic status, nationality, personal appearance, race, religion, or sexual
@@ -10,11 +10,9 @@ identity and orientation.
 
 ## Our standards
 
-Examples of behaviour that contributes to a positive environment:
-
-- Being respectful of differing opinions, viewpoints, and experiences.
-- Giving and gracefully accepting constructive feedback.
-- Focusing on what is best for learners and the community.
+Behaviour that contributes to a positive environment includes being respectful of differing
+opinions and experiences, giving and gracefully accepting constructive feedback, and focusing on
+what is best for learners and the community.
 
 Unacceptable behaviour includes harassment, insulting or derogatory comments, publishing others'
 private information without permission, and any conduct that would be inappropriate in a

@@ -1,31 +1,33 @@
-# Project 02 — Caffeine response
+# Project 02. Caffeine response
 
-**Question:** how long after a coffee do caffeine-related changes become visible in PPG features,
-and how much does that differ between people?
+How long after a coffee do caffeine-related changes show up in PPG features, and how much does
+that differ from one person to another?
 
-| | |
-|---|---|
+| Item | Value |
+|------|-------|
 | Signal | IR PPG |
-| Hardware | Wired Arduino **or** wireless ESP32 |
-| Feature window | 10 s |
-| Time to run | one ~40 min session, then ~30 min analysis (data collection spans ~30 min real time) |
+| Hardware | Wired Arduino or wireless ESP32 |
+| Feature window | 10 seconds |
+| Roughly how long | one session of about 40 minutes, then about 30 minutes of analysis. The recording spans roughly half an hour of real time. |
 | No-hardware mode | `python tools/ppg_simulator.py --scenario caffeine` |
 
-## What students do
+## How it goes
 
-1. **Collect** (`script1_caffeine_dataset_collection_protocol.py`) — record a **baseline**, then
-   sessions at **+5, +10, +15, +20, +25 min** after the coffee. Each session: 15 s stabilise +
-   60 s recording, saved as 10 s feature windows tagged with subject and time point.
-2. **Analyze** (`script2_caffeine_analysis_export.py`) — plot each feature as a change from that
-   subject's baseline over time; export summary CSVs and figures.
-3. **Interpret** (`script3_caffeine_interpretation_assistant.py`) — a GUI that helps answer:
-   when does the response appear, which feature moves most, how consistent is it across people.
+1. Collect with `script1_caffeine_dataset_collection_protocol.py`. Record a baseline, then
+   sessions at +5, +10, +15, +20 and +25 minutes after the coffee. Each session is 15 seconds to
+   stabilise and 60 seconds of recording, saved as 10 second feature windows tagged with the
+   subject and the time point.
+2. Analyze with `script2_caffeine_analysis_export.py`. Plot each feature as a change from that
+   subject's baseline over time, and export summary CSVs and figures.
+3. Interpret with `script3_caffeine_interpretation_assistant.py`. A GUI that helps you see when
+   the response appears, which feature moves most, and how consistent it is across people.
 
-## What students learn
+## What you get out of it
 
-- Comparing *within-subject* against a personal baseline instead of absolute values.
-- Confounds: circadian drift, posture, temperature, having eaten — and how to control them.
-- That a "known" physiological effect can be small, noisy, and subject-dependent.
+You work against a personal baseline rather than absolute values. You have to think about
+confounds like time of day, posture, temperature and whether the person has eaten, and how to
+keep them under control. And you see that a well-known physiological effect can still be small,
+noisy and very person-dependent.
 
 ## Run
 
@@ -33,21 +35,21 @@ and how much does that differ between people?
 pip install -r ../../../requirements.txt
 
 python ../../../tools/ppg_simulator.py --scenario caffeine     # no hardware
-cd wired      && python app.py        # or:  cd wireless && python app.py
+cd wired && python app.py                                      # or  cd wireless && python app.py
 ```
 
-## Expected result
+## What to expect
 
-Group-level trends (e.g. a modest heart-rate / pulse-amplitude shift) usually emerge by +10 to
-+20 min, but individual curves vary a lot and some subjects show almost nothing. That variability
-*is* the lesson.
+Group-level trends, for example a modest shift in heart rate or pulse amplitude, usually appear
+by +10 to +20 minutes. Individual curves vary a lot, and some people show almost nothing. That
+variability is the point.
 
-## Extensions
+## Ideas to take it further
 
-- Decaf vs caffeinated blind control.
-- Fit the time-to-onset per subject and compare to the caffeine pharmacokinetics literature.
+Run a blind decaf against caffeinated control. Fit the time to onset per person and compare it
+with the caffeine pharmacokinetics literature.
 
 ## Safety
 
-Educational demo. Not a medical device. Respect participants' caffeine tolerance and choices;
-offer a decaf/no-coffee alternative.
+An educational demo. Not a medical device. Respect each participant's caffeine tolerance and
+choices, and offer a decaf or no-coffee alternative.

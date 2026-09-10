@@ -1,10 +1,12 @@
-# 3D-printable MAX30102/MAX3010x enclosure
+# 3D-printable MAX3010x enclosure
 
-Included files:
+Two files.
 
 - `max30102_base.stl`
 - `max30102_shell.stl`
 
-The enclosure is intended to stabilize optical contact during wrist or arm PPG acquisition. Print orientation, strap integration, and sensor tolerances may need small adjustments depending on your printer and specific MAX3010x breakout board.
+The enclosure steadies the optical contact during wrist or arm PPG recording. Print orientation,
+strap fit and sensor tolerances may need small adjustments depending on your printer and your
+specific MAX3010x breakout.
 
-License for these models: CC BY 4.0. Please keep attribution to Pietro Chierico.
+These models are licensed CC BY 4.0. Keep attribution to Pietro Chierico.
