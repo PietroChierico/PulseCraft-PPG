@@ -1,33 +1,33 @@
 # PulseCraft PPG — an open photoplethysmography teaching kit
 
-**Five hands-on photoplethysmography (PPG) projects that take students from raw optical sensor data to a live, AI-assisted physiological demo — in one lab week.**
+**Five hands-on photoplethysmography (PPG) projects that take you from raw optical sensor data to a live, AI-assisted physiological demo.**
 
 [![License: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Media: CC BY 4.0](https://img.shields.io/badge/media-CC%20BY%204.0-lightgrey.svg)](MEDIA-LICENSE.md)
 [![checks](https://github.com/PietroChierico/PulseCraft-PPG/actions/workflows/python-syntax-check.yml/badge.svg)](https://github.com/PietroChierico/PulseCraft-PPG/actions)
 [![Try without hardware](https://img.shields.io/badge/try-no%20hardware%20needed-brightgreen.svg)](tools/README.md)
 
-PulseCraft PPG is a ready-to-teach kit for a photoplethysmography lab: Arduino and ESP32
-acquisition firmware, a 3D-printable MAX3010x sensor case, Python data-collection and
-feature-extraction pipelines, small machine-learning models, and live GUI demos. A built-in
-signal simulator lets you run every wireless project **before any hardware arrives**.
+PulseCraft PPG is a set of working PPG projects: Arduino and ESP32 acquisition firmware, a
+3D-printable MAX3010x sensor case, Python data-collection and feature-extraction pipelines, small
+machine-learning models, and live GUI demos. A built-in signal simulator lets you run every
+wireless project **before any hardware arrives**.
 
 It was designed and built end-to-end for the **Khalifa University CMHS Summer Internship
-Program (Biomedical Engineering & Biotechnology track)** and is released so any lab,
-course, workshop, or summer school can reuse it.
+Program 2026** (Biomedical Engineering & Biotechnology track) and is released so anyone — a lab, a
+course, a workshop, a summer school, or a curious individual — can pick it up and build on it.
 
 ---
 
 ## Who this is for
 
-- **Instructors** running an undergraduate or summer course in biomedical signals, wearable
-  sensing, digital health, or applied machine learning. The [`instructor-kit/`](instructor-kit/)
-  has a syllabus, per-session lesson plans, printable student worksheets, and a grading rubric.
+- **Teachers and workshop organisers** who want a set of working PPG projects to start from.
+  The projects are self-contained: use one or all five, in any order, and adapt them however
+  you like.
 - **Students and self-learners** who want a complete, working example of the full pipeline:
   sensor → acquisition → filtering → features → model → real-time inference.
 - **Researchers** who need a clean, citable baseline for PPG demos and outreach.
 
-No prior signal-processing or embedded experience is required. Basic Python is enough.
+No prior signal-processing or embedded experience is needed. Basic Python is enough.
 
 ## The five projects
 
@@ -39,20 +39,22 @@ No prior signal-processing or embedded experience is required. Basic Python is e
 | [04](projects/04-biofeedback-spo2-apnea/) | **Voluntary-apnea biofeedback** | How do Red/IR ratios move during a short, safe breath-hold? | Red + IR | Wired or wireless |
 | [05](projects/05-mental-stress-detection/) | **Mental stress detection** | Can a model separate relaxed vs. stressed from PPG features live? | IR | Wired or wireless |
 
-Every project follows the same three steps, so students learn the method once and reuse it:
+Every project follows the same three steps, so the method carries over from one to the next:
 
 1. **Collect** — a guided GUI records a fixed protocol and writes labeled feature windows to CSV.
 2. **Analyze & train** — inspect feature distributions, pick features, train and test a small model, export it.
 3. **Run live** — stream from the sensor (or the simulator) and see the model decide in real time.
 
-## What students learn
+It was first run over about a week, with small groups sharing four sensor nodes.
+
+## What the projects cover
 
 - How optical PPG works and why placement, pressure, skin tone, and motion change the waveform.
 - Practical filtering: detrending, band-pass design, and what each filter removes (`visualize_filters.py`).
 - Turning a windowed signal into interpretable features (amplitude, derivative, spectral, HRV proxies).
-- Training, testing, and *not* over-trusting a small classifier; reading a confusion matrix.
-- Running inference on a live stream and reasoning about failure modes.
-- Responsible physiological data handling and the limits of non-medical devices.
+- Training and testing a small classifier, and reading a confusion matrix rather than trusting an accuracy number.
+- Running inference on a live stream and reasoning about its failure modes.
+- Responsible physiological data handling and the limits of a non-medical device.
 
 ## Quick start (no hardware)
 
@@ -70,7 +72,7 @@ cd projects/01-physical-activity-recognition/wireless
 python script1_dataset_collection_protocol.py     # host 127.0.0.1, port 3333
 ```
 
-Then move to real hardware by following [`docs/getting-started.md`](docs/getting-started.md) (about 30 minutes).
+Then move to real hardware by following [`docs/getting-started.md`](docs/getting-started.md).
 
 ## Hardware
 
@@ -91,23 +93,16 @@ PulseCraft-PPG/
 ├── hardware/         # Arduino + ESP32 firmware and the 3D-printable case
 ├── tools/            # ppg_simulator.py (no-hardware mode) and check_setup.py
 ├── docs/             # Getting started, hardware, signal processing, troubleshooting, FAQ
-├── instructor-kit/   # Syllabus, lesson plans, worksheets, grading rubric
 ├── requirements.txt
 ├── CITATION.cff
 ├── LICENSE           # MIT (code)  ·  MEDIA-LICENSE.md — CC BY 4.0 (STL, photos, diagrams)
 └── SAFETY.md
 ```
 
-## Teaching with it
-
-Start at [`instructor-kit/README.md`](instructor-kit/README.md). It maps the five projects onto a
-5-day schedule (extendable to 3 weeks), lists what to prepare, and includes ready-to-print
-worksheets and a rubric. The lab was first delivered over one week with student groups of 2–3.
-
 ## Citing
 
 If you use PulseCraft PPG in a course, workshop, paper, or derivative kit, please cite it via
-[`CITATION.cff`](CITATION.cff) (GitHub shows a "Cite this repository" button once published).
+[`CITATION.cff`](CITATION.cff) (GitHub shows a "Cite this repository" button).
 
 ## License
 

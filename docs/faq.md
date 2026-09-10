@@ -12,11 +12,12 @@ breakout with an onboard 3.3 V regulator.
 Wired Arduino is simplest and most stable for a controlled lab bench. Wireless ESP32 is better for
 motion projects and a "wearable" feel. Projects 02–05 support both; Project 01 is wireless-first.
 
-**How long is the lab?**
-One week with groups of 2–3 (the original delivery). It stretches to 2–3 weeks by adding more
-data collection, cross-subject analysis, and a written report. See `instructor-kit/syllabus.md`.
+**How much time does it take?**
+Each project is a short session once the hardware or simulator is set up. The original run was
+about a week with small groups, but the projects are independent — do one or all five, at
+whatever pace suits you.
 
-**Can students keep their recordings?**
+**Can I keep the recordings?**
 Yes, locally. Do **not** commit them. `.gitignore` blocks CSVs, models, and output folders by
 default. See `DATA_POLICY.md`.
 
@@ -28,8 +29,8 @@ The Python side only needs a line-based stream of numbers. Any source that emits
 `millis,red,ir` lines over serial or TCP will work. Update the host/port or port name in the GUI.
 
 **Why are the models so small?**
-So they train in seconds, stay interpretable, and make students confront overfitting on
-class-sized data. Swapping in a bigger model is a good extension exercise.
+So they train in seconds on a laptop, stay interpretable, and make overfitting on small datasets
+obvious. Swapping in a bigger model is an easy next step.
 
 **What can I change and redistribute?**
 Everything. Code is MIT, media is CC BY 4.0. Keep attribution to Pietro Chierico and cite the repo.

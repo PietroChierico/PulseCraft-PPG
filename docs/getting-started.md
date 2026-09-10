@@ -71,6 +71,8 @@ script2_*   analyze features, train + test a model, export it
 script3_*   stream live and classify / score in real time
 ```
 
+Before a real recording, run through the [signal-quality checklist](signal-quality-checklist.md).
+
 ---
 
 ## Sample rate must match everywhere

@@ -8,9 +8,8 @@ before hardware arrives.
 
 - **Code:** <https://github.com/PietroChierico/PulseCraft-PPG>
 - **Start here:** [Getting started](getting-started.md) · [Hardware](hardware.md) ·
-  [Signal processing](signal-processing.md) · [Troubleshooting](troubleshooting.md) ·
-  [FAQ](faq.md) · [Glossary](glossary.md)
-- **Teaching:** [instructor kit](https://github.com/PietroChierico/PulseCraft-PPG/tree/main/instructor-kit)
+  [Signal processing](signal-processing.md) · [Signal-quality checklist](signal-quality-checklist.md) ·
+  [Troubleshooting](troubleshooting.md) · [FAQ](faq.md) · [Glossary](glossary.md)
 
 ## Projects
 

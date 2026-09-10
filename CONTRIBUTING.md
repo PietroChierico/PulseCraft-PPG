@@ -8,7 +8,7 @@ Contributions are welcome when they keep the kit **educational, reproducible, an
 - Better signal-quality checks and troubleshooting entries.
 - New simulator scenarios or a more realistic waveform model.
 - Additional interpretable features or visualisations.
-- Translations of the docs and worksheets.
+- Translations of the docs.
 - Bug fixes in parsers, protocols, or GUIs.
 - New projects that follow the collect → analyze → run-live pattern.
 
@@ -33,7 +33,7 @@ python tools/check_setup.py --stream 127.0.0.1:3333          # terminal 2
 
 - Keep Python 3.11-compatible; no new required dependencies without discussion.
 - `python -m py_compile` must pass for every changed `.py` (CI checks this).
-- If you touch a protocol or feature set, update the matching `docs/` page and worksheet.
+- If you touch a protocol or feature set, update the matching `docs/` page.
 - One focused change per PR. Describe what you tested (hardware or simulator).
 
 ## Reporting problems

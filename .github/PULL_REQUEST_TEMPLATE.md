@@ -11,5 +11,5 @@
 - [ ] Ran on hardware (board: ______)
 
 **Docs**
-- [ ] Updated the relevant `docs/` page / worksheet, or N/A
+- [ ] Updated the relevant `docs/` page, or N/A
 - [ ] Kept it educational, reproducible, and safe; no participant data or clinical claims
